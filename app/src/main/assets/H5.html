@@ -1,0 +1,74 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <title>实人认证结果</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <meta name="spm-id" content="a1z2p.8273284">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- 一般建议引入m-base公共组件，m-base的代码量极少，可直接内联在页面中；
+         index.js 为 rem 的基准设置 详情见：http://kpm.taobao.net/m-base/doc/guide/index.html -->
+    <script src="//g.alicdn.com/kg/m-base/2.0.1/index.js"></script>
+    <!-- 一般建议引入m-base公共组件，reset.css 为 mobile端 的 reset -->
+    <link inline rel="stylesheet" href="//g.alicdn.com/kg/m-base/2.0.1/reset.css"/>
+
+    <style>
+        footer,header,main{width:100%;text-align:center}footer,footer .btn-known,header,main{text-align:center}*{-webkit-tap-highlight-color:transparent}body,html{background-color:#fff}body,dl,h1,h2,h3,h4,h5,ol,p,ul{margin:0;padding:0}body{font-family:Helvetica Neue,Helvetica,Arial,Sans-serif;user-select:none}img{border:none}header{height:1.70666667rem;line-height:1.70666667rem;background-color:#ebebeb;color:#000;font-size:.52rem;font-weight:700}main{margin-top:2.53333333rem}main img{width:2.66666667rem;height:2.66666667rem;margin-bottom:.61333333rem}main p{font-weight:500;font-size:.44rem;margin-bottom:.25333333rem}main p.last{margin-bottom:2.70666667rem}footer{height:4.94666667rem}footer .btn-known{display:block;width:6rem;height:1.33333333rem;background:#08af91;line-height:1.33333333rem;color:#fff;font-size:.42666667rem;margin:0 auto;border-radius:8px;cursor:pointer}
+    </style>
+
+</head>
+
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&asid=AQAAAABW+KlayPboDgAAAACwl0QtA1cU3Q==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+<script src="//g.alicdn.com/alilog/mlog/aplus_v2.js"></script>
+<script>
+        window.goldlog&&goldlog.record('/alitx.22.2.zebra-auth','EXP','','H1478724914')
+    </script>
+<header>
+    实名认证
+</header>
+
+<main>
+    <img src="//gw.alicdn.com/tps/TB1lFUsOFXXXXXkaFXXXXXXXXXX-200-200.png" alt="承接">
+    <p>实名认证已完成</p>
+    <p>请回到斑马智行APP</p>
+    <p class="last">继续完成绑车操作</p>
+</main>
+
+<footer>
+    <a href="app://" class="btn-known" id="J_CallBanma">回到斑马智行</a>
+</footer>
+<script src="//g.alicdn.com/mtb/lib-windvane/2.1.8/windvane.js"></script>
+<script>
+    // 需要申请visa才可以从手淘跳出 https://www.atatech.org/articles/81103?msgid=1493395
+   var params = {
+    	url: 'smartTravel://?visa=7e69537c0909ac88'
+    };
+    document.getElementById('J_CallBanma').onclick = function(e) {
+        window.WindVane.call('WVClient', 'open', params, function(e) {
+        }, function(e) {
+            window.WindVane.call('WVClient', 'open', {
+                url: 'bindcarconfirm://?visa=7e69537c0909ac88'
+            }, function(e) {
+            }, function(e) {
+                alert('打开失败，请手动回到斑马智行');
+            });
+        });
+    }
+</script>
+</body>
+</html>
